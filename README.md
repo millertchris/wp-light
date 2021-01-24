@@ -1,14 +1,5 @@
 # WP Light
-Contributors: millertchris
-Donate link: https://millertchris.com
-Tags: clean, light, head, performance
-Requires at least: 3.0.1
-Tested up to: 5.6
-Stable tag: 5.6
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
-Creates a lighter and more performant WordPress by removing things you don’t need.
+Create a lighter and more performant WordPress by removing things you don’t need.
 
 ## Description
 WordPress out of the box includes several things in the head section of your theme that you may never use. If you’re a clean freak like me, you may want to limit or control exactly what goes into your head section.
