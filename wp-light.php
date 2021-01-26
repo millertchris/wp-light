@@ -16,7 +16,7 @@
  * Plugin Name:       WP Light
  * Plugin URI:        https://millertchris.com
  * Description:       Creates a lighter and more performant WordPress by removing things you don't need.
- * Version:           1.0.0
+ * Version:           1.1.0
  * Author:            Chris Miller
  * Author URI:        https://millertchris.com
  * License:           GPL-2.0+
@@ -30,12 +30,19 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
+require 'plugin-update-checker/plugin-update-checker.php';
+$myUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
+	'https://github.com/millertchris/wp-light/',
+	__FILE__,
+	'wp-light'
+);
+
 /**
  * Currently plugin version.
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WP_LIGHT_VERSION', '1.0.0' );
+define( 'WP_LIGHT_VERSION', '1.1.0' );
 
 /**
  * The code that runs during plugin activation.
